@@ -12,6 +12,7 @@ const languageStrings = {
   'en': require('./languageStrings')
 }
 const AWS = require('aws-sdk');
+const randomWords = require('random-words');
 
 const LaunchRequest = {
   canHandle(handlerInput) {
