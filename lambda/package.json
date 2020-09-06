@@ -1,14 +1,14 @@
 {
-  "name": "skill-sample-nodejs-highlowgame",
+  "name": "vowel-counter",
   "version": "2.6.0",
-  "description": "High-low number guessing game for Alexa (i18n)",
+  "description": "Get quizzed on vowel counts for random words",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alexa/skill-sample-nodejs-highlowgame.git"
+    "url": "git+https://github.com:aarlin/vowel-counter.git"
   },
   "keywords": [
     "Alexa",
@@ -18,9 +18,9 @@
   "author": "Amazon.com",
   "license": "Amazon Software License",
   "bugs": {
-    "url": "https://github.com/alexa/skill-sample-nodejs-highlowgame/issues"
+    "url": "https://github.com/aarlin/vowel-counter/issues"
   },
-  "homepage": "https://github.com/alexa/skill-sample-nodejs-highlowgame#readme",
+  "homepage": "https://github.com/aarlin/vowel-counter#readme",
   "dependencies": {
     "ask-sdk": "^2.6.0",
     "ask-sdk-s3-persistence-adapter": "^2.6.0",
