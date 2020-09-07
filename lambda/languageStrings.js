@@ -12,8 +12,8 @@ module.exports = {
     TOO_LOW_MESSAGE: '%s is too low.',
     TOO_LOW_REPROMPT: 'Try guessing a larger number.',
     CONTINUE_MESSAGE: 'Say yes to play or no to quit.',
-    HELP_MESSAGE: 'I\'ll tell you a random word and you will tell me the number of vowels in the word.',
-    HELP_REPROMPT: 'Your word is %s.',
+    HELP_MESSAGE: 'I\'ll tell you a random word and you will tell me the number of vowels in the word. Would you like to play?',
+    HELP_REPROMPT: 'Vowels are a,e,i,o,u. Would you like to play Vowel Counter?',
     ERROR_MESSAGE: 'Sorry, an error occurred.',
     YES_MESSAGE: 'Great! Tell me how many vowels are in the word: %s'
   }

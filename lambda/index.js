@@ -15,7 +15,6 @@ const AWS = require('aws-sdk');
 const randomWords = require('random-words');
 const { getNumberOfVowels } = require('./util');
 
-
 const LaunchRequest = {
   canHandle(handlerInput) {
     // launch requests as well as any new session, as games are not saved in progress, which makes
