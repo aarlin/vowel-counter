@@ -17,3 +17,15 @@ module.exports.getS3PreSignedUrl = function getS3PreSignedUrl(s3ObjectKey) {
     return s3PreSignedUrl;
 
 }
+
+const getNumberOfVowels = (word) => {
+    const vowels = 'aeiou';
+    return word.split("").reduce((vowelCount, letter) => {
+        if (vowels.includes(letter)) {
+          vowelCount += 1;
+        }
+        return vowelCount;
+    }, 0)
+}
+
+module.exports.getNumberOfVowels = getNumberOfVowels;

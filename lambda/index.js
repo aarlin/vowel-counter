@@ -13,6 +13,8 @@ const languageStrings = {
 }
 const AWS = require('aws-sdk');
 const randomWords = require('random-words');
+const { getNumberOfVowels } = require('./util');
+
 
 const LaunchRequest = {
   canHandle(handlerInput) {
@@ -187,7 +189,7 @@ const NumberGuessIntent = {
     const sessionAttributes = attributesManager.getSessionAttributes();
 
     const guessNum = parseInt(Alexa.getSlotValue(handlerInput.requestEnvelope, 'number'), 10);
-    const targetNum = sessionAttributes.guessNumber;
+    const targetNum = getNumberOfVowels(sessionAttributes.randomWord);
     
     if (guessNum > targetNum) {
       return handlerInput.responseBuilder
