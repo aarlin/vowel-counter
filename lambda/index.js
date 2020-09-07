@@ -108,10 +108,11 @@ const YesIntent = {
 
     sessionAttributes.gameState = 'STARTED';
     sessionAttributes.guessNumber = Math.floor(Math.random() * 101);
+    sessionAttributes.randomWord = randomWords();
 
     return handlerInput.responseBuilder
-      .speak(requestAttributes.t('YES_MESSAGE'))
-      .reprompt(requestAttributes.t('HELP_REPROMPT'))
+      .speak(requestAttributes.t('YES_MESSAGE', sessionAttributes.randomWord))
+      .reprompt(requestAttributes.t('HELP_REPROMPT', sessionAttributes.randomWord))
       .getResponse();
   },
 };

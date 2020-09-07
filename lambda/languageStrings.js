@@ -13,8 +13,8 @@ module.exports = {
     TOO_LOW_REPROMPT: 'Try guessing a larger number.',
     CONTINUE_MESSAGE: 'Say yes to play or no to quit.',
     HELP_MESSAGE: 'I\'ll tell you a random word and you will tell me the number of vowels in the word.',
-    HELP_REPROMPT: 'Try saying a number.',
+    HELP_REPROMPT: 'Your word is %s.',
     ERROR_MESSAGE: 'Sorry, an error occurred.',
-    YES_MESSAGE: 'Great! Try saying a number to start the game.'
+    YES_MESSAGE: 'Great! Tell me how many vowels are in the word: %s'
   }
 };
